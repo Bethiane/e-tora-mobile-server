@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "env-cmd -f .env nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bethiane",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "brcypt": "^1.0.1",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.3",
     "nodemon": "^2.0.19"
   }
 }
