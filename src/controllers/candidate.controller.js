@@ -26,7 +26,7 @@ exports.createCandidate = async (req, res) => {
 // GET /Candidates
 exports.getCandidates = async (req, res) => {
   try {
-    const candidates = await Candidate.find();
+    const candidates = await Candidate.find().populate("partyId");
     res.send(candidates);
   } catch (error) {
     res.status(500).send(error.toString());
